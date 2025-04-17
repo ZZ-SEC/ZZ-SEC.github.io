@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <style type="text/css">
+        a{
+            text-decoration: none;
+            color: #3873b2;
+        }
+        body{
+            font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+        img{
+            box-shadow: 4px 4px 8px #888;
+        }
+        .inline_div{
+          display:inline-block;
+          vertical-align: middle;
+          text-align:left;
+        }
+        .font_title {
+            font-size: 30px;
+            font-weight: bold;
+            font-style: normal;
+            color: #888;
+            line-height: 40px;
+        }
+        .font_content{
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            color: black;
+            line-height: 35px;
+        }
+        .font_content_blue{
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            color: #3873b2;
+            line-height: 35px;
+        }
+        .coloredText {
+            background-image: linear-gradient(to right, #00b47e, #00a2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .line_main{
+            width:100%; border: 1px solid #999999; margin-left: 0;
+        }
+        .div_title{
+            background-image: linear-gradient(to right, #00b47e, #00a2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            width:100%;
+            text-align: center;
+            font-size: 35px;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 50px;
+        }
+        .div_menu{
+            height:50px;
+            width:100%;
+            /* margin-bottom:15px; */
+            text-align: center;
+            /* border-bottom:1px solid #999999; */
+            font-size: 20px;
+            font-weight: normal;
+            font-style: normal;
+            color: #666666;
+            line-height: 40px;
+            transition: background-color 0.2s ease;
+            border-radius:0 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div_menu:hover{
+            background-color: #ccc;
+        }
+        .span_button{
+            text-align: center;
+            /* border-bottom:1px solid #999999; */
+            font-weight: normal;
+            font-style: normal;
+            color: #666666;
+            transition: background-color 0.2s ease;
+            border-radius:10% 10% 10% 10%;
+        }
+        .span_button:hover{
+            background-color: #ccc;
+        }
+    </style>
+    <script  type="text/javascript">
+        let info_dict={};
+        let record={"lan_id":0,"page_id":0};
+        if (localStorage.hasOwnProperty("record")) {
+            record= JSON.parse(localStorage.getItem("record"));
+        }
+        let language_id=record["lan_id"];
+        let page_id=record["page_id"];
+        function sleep(ms) {
+            return new Promise((resolve) => setTimeout(resolve, ms));
+        }
+        function load_info(file_path){
+            let status=0;
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET",file_path,true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    info_dict = JSON.parse(xhr.responseText);
+                    status=1;
+                }
+            }
+            xhr.send();
+        }
+        async function load_page(){
+            while (Object.keys(info_dict).length==0){
+                await sleep(100);
+            }
+            if (language_id+1>info_dict["language"].length)
+                language_id=0;
+            if (page_id+1>info_dict["page"].length)
+                page_id=0;
+            localStorage.setItem("record", JSON.stringify({"lan_id":language_id,"page_id":page_id}));
+            let languages=info_dict["language"];
+            let language=languages[language_id][1];
+            let str_language="";
+            for (let i=0;i<languages.length;i++){
+                str_language+=`<span class="span_button" onclick="language_id=${i};load_page();" style="height: 30px;vertical-align: middle;cursor:pointer">${languages[i][0]}</span>&nbsp;&nbsp;&nbsp;&nbsp;`;
+            }
+            document.getElementById("language").innerHTML=str_language;
+            // draw menu
+            let website_name=info_dict["title_"+language];
+            document.title=website_name;
+            let str_menu=`
+                <div style="height:15%;"></div>
+                <div class="div_title" onclick="page_id=${0};load_page();" style="height:200px;border-bottom:none;cursor:pointer;border-radius:15px 15px 15px 15px;" >${website_name}</div>
+                
+            `;
+            for (let i=0;i<info_dict["page"].length;i++){
+                page_i=info_dict["page"][i];
+                page_name=page_i["name_"+language];
+                let current_page_menu_style="";
+                if (i==page_id){
+                    current_page_menu_style="background-color:#ddd;border-radius:0 0 0 0;"
+                }
+                str_menu+=`
+                    <div class="div_menu" onclick="page_id=${i};load_page();" style="cursor:pointer;${current_page_menu_style};">
+                        ${page_name}
+                    </div>
+                `;
+            }
+            document.getElementById("menu").innerHTML=str_menu;
+            // draw content
+            let section=info_dict["page"][page_id]["section"];
+            let str_page="";
+            let align=info_dict["align"];
+            if ("align" in info_dict["page"][page_id])
+                align=info_dict["page"][page_id]["align"];
+            let vspace=info_dict["vspace"];
+            if ("vspace" in info_dict["page"][page_id])
+                vspace=info_dict["page"][page_id]["vspace"];
+            for (let i=0;i<section.length;i++){
+                let section_i_key=section[i]+"_"+language;
+                let section_i=info_dict["section"][section_i_key];
+                let title=section_i["title"];
+                let str_title="";
+                if (title.length>0){
+                    str_title=`
+                        <div class="font_title" style="margin-bottom:${vspace}px;text-align:${align};">
+                            ${title}
+                        </div>
+                        <!--<hr class = "line_main" style="margin-bottom:20px">-->
+                    `;
+                }
+                let str_content="";
+                for (let j=0;j< section_i["content"].length;j++){
+                    content=section_i["content"][j];
+                    let inv=false;
+                    if ("inv" in content)
+                        inv=content["inv"];
+                    let str_j="";
+                    if (content["type"]=="head"){
+                        let info=content["data"];
+                        str_j=`
+                            <div class="font_content" style="width:100%; margin-bottom:${vspace}px;text-align:${align};">
+                                <div class="inline_div" style="height:220px;margin-left:10px;vertical-align:middle;">
+                                    <img src="${info["photo"]}" style="height:220px">
+                                </div>
+                                <div class="inline_div" style="vertical-align:middle; margin-left:60px;margin-top:20px;">
+                                    <div class= "font_title" style="margin-bottom:10px">${info["name"]}</div>
+                                    <div class= "font_content">
+                                        ${info["title"]}<br>
+                                        ${info["addr"]}<br>
+                                        ${"Email: " + info["email"]}<br>
+                                        ${"Phone: "+ info["phone"]}<br>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    else if (content["type"]=="table"){
+                        let table=content["data"];
+                        let str_table=[];
+                        let n_col=table[0].length;
+                        let n_row=table.length;
+                        let temp="";
+                        for (let k = 0;k<n_col;k++){
+                            str_table[k]="";
+                            for (let ll=0;ll<n_row;ll++){
+                                let l=ll;
+                                if (inv)
+                                    l=n_row-1-ll;
+                                str_table[k]+=(table[l][k]+((ll<n_row-1)?"<br>":""));
+                            }
+                            if (k==0)
+                                temp+=`
+                                    <div class="inline_div font_content" >${str_table[k]}</div>
+                                `;
+                            else
+                                temp+=`
+                                    <div class="inline_div font_content"  style="margin-left:50px">${str_table[k]}</div>
+                                `;
+                        }
+                        str_j=`
+                            <div style="width:100%;margin-bottom:${vspace}px;text-align:${align};">
+                                ${temp}
+                            </div>
+                        `;
+                    }
+                    else if (content["type"]=="paper"){
+                        let paper=content["data"];
+                        let str_paper="";
+                        let n_paper=paper.length;
+                        let temp="";
+                        for (let kk = 0;kk<n_paper;kk++){
+                            let k=kk;
+                            if (inv)
+                                k=n_paper-1-kk;
+                            let paper_k=paper[k];
+                            let img=paper_k["img"];
+                            if (img==""){
+                                img="./img/-1.svg";
+                            }
+                            let link=paper_k["link"];
+                            let onclick=`onclick="window.open('${link}');"`;
+                            if (link==""){
+                                onclick="";
+                            }
+                            let author=paper_k["author"][0];
+                            for (j=1;j<paper_k["author"].length;j++){
+                                author+=(", "+paper_k["author"][j]);
+                            }
+                            let time=paper_k["time"];
+                            if (time==""){
+                                time = "Not published yet";
+                            }
+                            str_paper+=`
+                                <div style="height:200px;width:100%;">
+                                    <div class="inline_div" style="width:250px;">
+                                        <img id="publication_i_img" src="${img}" style="width:220px;height:160px;object-fit:contain;">
+                                    </div>
+                                    <div class="inline_div" id="publication_i_content" style="width:calc(100% - 260px);line-height: 6mm;">
+                                        <div class= "font_content_blue" style="width:100%;line-height: 6mm;cursor:pointer;" ${onclick}>
+                                            <span style="color:black;">${k+1}.</span>
+                                            ${paper_k["title"]}
+                                        </div>
+                                        <div>
+                                            ${author}
+                                        </div>
+                                        <div>
+                                            ${paper_k["journal"]},&nbsp;&nbsp;${time}
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        }
+                        str_j=`
+                            <div style="width:100%;margin-bottom:${vspace}px;text-align:${align};">
+                                ${str_paper}
+                            </div>
+                        `;
+                    }
+                    str_content+=str_j;
+                }
+                str_page+=`
+                    ${str_title}
+                    ${str_content}
+                `;
+
+            }
+            document.getElementById("page").innerHTML=str_page;
+        }
+        load_info("./info.json");
+        load_page();
+    </script>
+    <title>Homepage</title>
+</head>
+<body style="background-color: #ddd;height:100%;">
+    <div id="menu_lan" style="
+        position:absolute;left:5px;height: 99%;width:235px;min-height: 600px;
+        border-radius:10px 0px 0px 10px;background-color: #eee;
+        ">
+        <div id="menu" style="height:94%;"></div>
+        <div id="language" style="height: 5%;margin-left: 10%;"></div>
+    </div>
+    <div id="content" style="
+        height: 99%;width: calc(100% - 250px);left:241px;position:absolute;overflow: auto;min-width:1200px;min-height: 600px;
+        border-radius:0px 10px 10px 0px;background-color: #fff; 
+        ">
+        <div id="page" style="width: 65%; margin: auto; margin-top: 80px;"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,331 @@
+{
+    "language":[
+        ["English","en"],
+        ["中文","ch"]
+    ],
+    "title_en":"Personal HomePage",
+    "title_ch":"个人主页",
+    "vspace":60,
+    "align":"left",
+    "page":[
+        {
+            "name_ch":"基本信息",
+            "name_en":"Basic Information",
+            "align":"left",
+            "vspace":30,
+            "section":["info","intro","education","research_interest"]
+        },
+        {
+            "name_ch":"教学",
+            "name_en":"Teaching",
+            "align":"center",
+            "section":["teaching"]
+        },
+        {
+            "name_ch":"荣誉",
+            "name_en":"Honors",
+            "align":"center",
+            "section":["honor"]
+        },
+        {
+            "name_ch":"工具",
+            "name_en":"Tools",
+            "align":"center",
+            "section":["tool"]
+        },
+        {
+            "name_ch":"发表论文",
+            "name_en":"Publication",
+            "align":"center",
+            "section":["publication"]
+        }
+    ],
+    "section":{
+        "info_en":{
+            "title":"",
+            "content":[
+                {
+                    "type":"head",
+                    "data":{
+                        "name":"Zheng Zhan",
+                        "title":"Ph.D Candidate",
+                        "email":"zz00822@mail.ustc.edu.cn",
+                        "phone":"+86 15155113562",
+                        "addr":["Graphics & Geometric Computing Laboratory (GCL)<br>School of Mathematical Sciences, USTC"],
+                        "photo":"./img/id_photo_compress.jpg"
+                    }
+                }
+            ]
+        },
+        "info_ch":{
+            "title":"",
+            "content":[
+                {
+                    "type":"head",
+                    "data":{
+                        "name":"詹正",
+                        "title":"博士生",
+                        "email":"zz00822@mail.ustc.edu.cn",
+                        "phone":"+86 15155113562",
+                        "addr":"安徽省图形计算与感知交互重点实验室<br>中国科学技术大学数学科学学院",
+                        "photo":"./img/id_photo_compress.jpg"
+                    }
+                }
+            ]
+        },
+        "intro_en":{
+            "type":"general",
+            "title":"Introduction",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["Zheng Zhan is a Ph.D. candidate at the School of Mathematical Science, University of Science and Technology of China (USTC), supervised by Prof. Falai Chen. His research interests primarily focus on computational geometry, with a specific emphasis on domain parameterizations, iso-geometric analysis and deep learning technics. "]
+                    ]
+                }
+            ]
+        },
+        "intro_ch":{
+            "type":"general",
+            "title":"个人简介",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["詹正就读于中国科学技术大学数学科学学院，是计算数学方向的博士生，导师是陈发来教授。他的主要研究方向是计算几何方向，侧重于区域参数化领域和深度学习技术。在研究生阶段，他在深度学习和计算几何的交叉领域发表了数篇高质量学术论文，并多次获得校级、省部级奖学金和其它荣誉。"]
+                    ]
+                }
+            ]
+        },
+        "research_interest_en":{
+            "type":"general",
+            "title":"Research Interests",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["Iso-geometric Analysis"],
+                        ["Deep Learning"],
+                        ["Domain Parameterization"]
+                    ]
+                }
+            ]
+        },
+        "research_interest_ch":{
+            "type":"general",
+            "title":"研究兴趣",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["等几何分析"],
+                        ["深度学习"],
+                        ["区域参数化"]
+                    ]
+                }
+            ]
+        },
+        "education_en":{
+            "type":"general",
+            "title":"Education",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["2016 - 2020","Bachelor of Science, Computational Mathematics", "USTC"],
+                        ["2016 - 2020","Dual Degree: Computer Science", "USTC"],
+                        ["2020 - Present","PhD, Computational Mathematics", "USTC"]
+                    ]
+                }
+            ]
+        },
+        "education_ch":{
+            "type":"general",
+            "title":"教育经历",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["2016 - 2020","本科，信息与计算科学", "中国科学技术大学"],
+                        ["2016 - 2020","双学位：计算机科学", "中国科学技术大学"],
+                        ["2020 - 至今","博士，计算数学", "中国科学技术大学"]
+                    ]
+                }
+            ]
+        },
+        "honor_en":{
+            "type":"general",
+            "title":"Honors",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["2022","National Scholarship","USTC"],
+                        ["2023","Yang Yuanqing Education Fund Scholarship","USTC"],
+                        ["2023","Outstanding Communist Youth League Cadre, Outstanding Student Cadre","USTC"],
+                        ["2024","National Scholarship","USTC"],
+                        ["2025","Outstanding Graduates from USTC & Anhui Province","USTC"]
+                    ]
+                }
+            ]
+        },
+        "honor_ch":{
+            "type":"general",
+            "title":"荣誉",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["2022","国家奖学金","中国科学技术大学"],
+                        ["2023","杨元庆教育基金奖学金","中国科学技术大学"],
+                        ["2023","优秀共青团干部、优秀学生干部","中国科学技术大学"],
+                        ["2024","国家奖学金","中国科学技术大学"],
+                        ["2025","中国科学技术大学优秀毕业生、安徽省优秀毕业生","中国科学技术大学"]
+                    ]
+                }
+            ]
+        },
+        "teaching_en":{
+            "type":"general",
+            "title":"Teaching",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["Fall, 2020","001512: Single Variable Calculus", "Teaching Assistant", "USTC"],
+                        ["Fall, 2021","CS1001B: C Language Programming", "Teaching Assistant", "USTC"],
+                        ["Fall, 2022","CS1001A: C Language Programming", "Teaching Assistant", "USTC"]
+                    ]
+                }
+            ]
+        },
+        "teaching_ch":{
+            "type":"general",
+            "title":"教学",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["秋季, 2020","001512: 单变量微积分", "助教", "中国科学技术大学"],
+                        ["秋季, 2021","CS1001B: C 语言程序设计", "助教", "中国科学技术大学"],
+                        ["秋季, 2022","CS1001A: C 语言程序设计", "助教", "中国科学技术大学"]
+                    ]
+                }
+            ]
+        },
+        "tool_en":{
+            "type":"general",
+            "title":"Tools",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["<a href = 'http://81.71.41.70/yinzhang/'>Seal design</a>", "Tool for seal design. The data is from <a href='http://www.zdic.net'>ZDict</a>"],
+                        ["<a href = './gym_time/index.html'> USTC Gym schedual </a>", "The schedual of USTC Gym"]
+                    ]
+                }
+            ]
+        },
+        "tool_ch":{
+            "type":"general",
+            "title":"工具",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["<a href = 'http://81.71.41.70/yinzhang/'>印章集字</a>", "印章集字工具，字形数据来源于 <a href='http://www.zdic.net' target='_blank'>汉典</a> 网站"],
+                        ["<a href = './gym_time/index.html'> USTC 健身房时间表 </a>", "中国科学技术大学东、西、中区健身房时间安排表"]
+                    ]
+                }
+            ]
+        },
+        "publication_en":{
+            "type":"general",
+            "title":"Publication",
+            "content":[
+                {
+                    "type":"paper",
+                    "inv":true,
+                    "data":[
+                        {
+                            "time":"2022",
+                            "title":"Boundary Correspondence for Iso-Geometric Analysis Based on Deep Learning",
+                            "journal":"Communications in Mathematics and Statistics",
+                            "author":["Zheng Zhan","Ye Zheng","Wenping Wang","Falai Chen*"],
+                            "link":"https://link.springer.com/article/10.1007/s40304-023-00337-7",
+                            "img":"./img/1.jpg"
+                        },
+                        {
+                            "time":"2024",
+                            "title":"Simultaneous Boundary and Interior Parameterization of Planar Domains via Deep Learning",
+                            "journal":"Computer-Aided Design",
+                            "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
+                            "link":"https://www.sciencedirect.com/science/article/abs/pii/S0010448523001537",
+                            "img":"./img/2.jpg"
+                        },
+                        {
+                            "time":"2024",
+                            "title":"Fast parameterization of planar domains for isogeometric analysis via generalization of deep neural network",
+                            "journal":"Computer Aided Geometric Design",
+                            "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
+                            "link":"https://www.sciencedirect.com/science/article/pii/S0167839624000475",
+                            "img":"./img/3.jpg"
+                        },
+                        {
+                            "time":"2025",
+                            "title":"Integral Parameterization of Volumetric Domains via Deep Neural Networks",
+                            "journal":"Computer Methods in Applied Mechanics and Engineering",
+                            "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
+                            "link":"https://www.sciencedirect.com/science/article/pii/S0045782525002609",
+                            "img":"./img/4.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publication_ch":{
+            "type":"general",
+            "title":"发表论文",
+            "content":[
+                {
+                    "type":"paper",
+                    "inv":true,
+                    "data":[
+                        {
+                            "time":"2022",
+                            "title":"Boundary Correspondence for Iso-Geometric Analysis Based on Deep Learning",
+                            "journal":"Communications in Mathematics and Statistics",
+                            "author":["Zheng Zhan","Ye Zheng","Wenping Wang","Falai Chen*"],
+                            "link":"https://link.springer.com/article/10.1007/s40304-023-00337-7",
+                            "img":"./img/1.jpg"
+                        },
+                        {
+                            "time":"2024",
+                            "title":"Simultaneous Boundary and Interior Parameterization of Planar Domains via Deep Learning",
+                            "journal":"Computer-Aided Design",
+                            "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
+                            "link":"https://www.sciencedirect.com/science/article/abs/pii/S0010448523001537",
+                            "img":"./img/2.jpg"
+                        },
+                        {
+                            "time":"2024",
+                            "title":"Fast parameterization of planar domains for isogeometric analysis via generalization of deep neural network",
+                            "journal":"Computer Aided Geometric Design",
+                            "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
+                            "link":"https://www.sciencedirect.com/science/article/pii/S0167839624000475",
+                            "img":"./img/3.jpg"
+                        },
+                        {
+                            "time":"2025",
+                            "title":"Integral Parameterization of Volumetric Domains via Deep Neural Networks",
+                            "journal":"Computer Methods in Applied Mechanics and Engineering",
+                            "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
+                            "link":"https://www.sciencedirect.com/science/article/pii/S0045782525002609",
+                            "img":"./img/4.jpg"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
