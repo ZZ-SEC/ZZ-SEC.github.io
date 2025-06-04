@@ -260,6 +260,11 @@
                             if (time==""){
                                 time = "Not published yet";
                             }
+                            let str_items="";
+                            let items=paper_k["items"];
+                            for (j=0;j<items.length;j++){
+                                str_items+=`[<a href="${items[j][1]}">${items[j][0]}</a>] `;
+                            }
                             str_paper+=`
                                 <div style="height:200px;width:100%;">
                                     <div class="inline_div" style="width:250px;">
@@ -275,6 +280,9 @@
                                         </div>
                                         <div>
                                             ${paper_k["journal"]},&nbsp;&nbsp;${time}
+                                        </div>
+                                        <div>
+                                            ${str_items}
                                         </div>
                                     </div>
                                 </div>

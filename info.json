@@ -4,7 +4,7 @@
         ["中文","ch"]
     ],
     "title_en":"Zheng Zhan's<br>HomePage",
-    "title_ch":"詹正 的<br>个人主页",
+    "title_ch":"詹正的<br>个人主页",
     "vspace":60,
     "align":"left",
     "page":[
@@ -253,7 +253,8 @@
                             "journal":"Communications in Mathematics and Statistics",
                             "author":["Zheng Zhan","Ye Zheng","Wenping Wang","Falai Chen*"],
                             "link":"https://link.springer.com/article/10.1007/s40304-023-00337-7",
-                            "img":"./img/1.jpg"
+                            "img":"./img/1.jpg",
+                            "items":[["paper","./paper/1.pdf"],["code","https://github.com/ZZ-SEC/Boundary-Correspondence"]]
                         },
                         {
                             "time":"2024",
@@ -261,7 +262,8 @@
                             "journal":"Computer-Aided Design",
                             "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
                             "link":"https://www.sciencedirect.com/science/article/abs/pii/S0010448523001537",
-                            "img":"./img/2.jpg"
+                            "img":"./img/2.jpg",
+                            "items":[["paper","./paper/2.pdf"]]
                         },
                         {
                             "time":"2024",
@@ -269,7 +271,8 @@
                             "journal":"Computer Aided Geometric Design",
                             "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
                             "link":"https://www.sciencedirect.com/science/article/pii/S0167839624000475",
-                            "img":"./img/3.jpg"
+                            "img":"./img/3.jpg",
+                            "items":[["paper","./paper/3.pdf"],["code","https://github.com/ZZ-SEC/Planar-Domain-Parameterization"]]
                         },
                         {
                             "time":"2025",
@@ -277,7 +280,8 @@
                             "journal":"Computer Methods in Applied Mechanics and Engineering",
                             "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
                             "link":"https://www.sciencedirect.com/science/article/pii/S0045782525002609",
-                            "img":"./img/4.jpg"
+                            "img":"./img/4.jpg",
+                            "items":[["paper","./paper/4.pdf"],["code","https://github.com/ZZ-SEC/Volumetric-Domain-Parameterization"]]
                         }
                     ]
                 }
@@ -297,7 +301,8 @@
                             "journal":"Communications in Mathematics and Statistics",
                             "author":["Zheng Zhan","Ye Zheng","Wenping Wang","Falai Chen*"],
                             "link":"https://link.springer.com/article/10.1007/s40304-023-00337-7",
-                            "img":"./img/1.jpg"
+                            "img":"./img/1.jpg",
+                            "items":[["paper","./paper/1.pdf"],["code","https://github.com/ZZ-SEC/Boundary-Correspondence"]]
                         },
                         {
                             "time":"2024",
@@ -305,7 +310,8 @@
                             "journal":"Computer-Aided Design",
                             "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
                             "link":"https://www.sciencedirect.com/science/article/abs/pii/S0010448523001537",
-                            "img":"./img/2.jpg"
+                            "img":"./img/2.jpg",
+                            "items":[["paper","./paper/2.pdf"]]
                         },
                         {
                             "time":"2024",
@@ -313,7 +319,8 @@
                             "journal":"Computer Aided Geometric Design",
                             "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
                             "link":"https://www.sciencedirect.com/science/article/pii/S0167839624000475",
-                            "img":"./img/3.jpg"
+                            "img":"./img/3.jpg",
+                            "items":[["paper","./paper/3.pdf"],["code","https://github.com/ZZ-SEC/Planar-Domain-Parameterization"]]
                         },
                         {
                             "time":"2025",
@@ -321,7 +328,8 @@
                             "journal":"Computer Methods in Applied Mechanics and Engineering",
                             "author":["Zheng Zhan","Wenping Wang","Falai Chen*"],
                             "link":"https://www.sciencedirect.com/science/article/pii/S0045782525002609",
-                            "img":"./img/4.jpg"
+                            "img":"./img/4.jpg",
+                            "items":[["paper","./paper/4.pdf"],["code","https://github.com/ZZ-SEC/Volumetric-Domain-Parameterization"]]
                         }
                     ]
                 }
