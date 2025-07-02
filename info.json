@@ -80,7 +80,7 @@
                 {
                     "type":"table",
                     "data":[
-                        ["Zheng Zhan is a Ph.D. candidate at the School of Mathematical Science, University of Science and Technology of China (USTC), supervised by Prof. Falai Chen. His research interests primarily focus on computational geometry, with a specific emphasis on domain parameterizations, iso-geometric analysis and deep learning technics. "]
+                        ["Zheng Zhan is a recent Ph.D. graduate from the School of Mathematical Science at the University of Science and Technology of China (USTC), supervised by Prof. Falai Chen. His research interests primarily focus on computational geometry, with a specific emphasis on domain parameterizations, iso-geometric analysis and deep learning technics."]
                     ]
                 }
             ]
@@ -92,7 +92,7 @@
                 {
                     "type":"table",
                     "data":[
-                        ["詹正就读于中国科学技术大学数学科学学院，是计算数学方向的博士生，导师是陈发来教授。他的主要研究方向是计算几何方向，侧重于区域参数化领域和深度学习技术。在研究生阶段，他在深度学习和计算几何的交叉领域发表了数篇高质量学术论文，并多次获得校级、省部级奖学金和其它荣誉。"]
+                        ["詹正是来自中国科学技术大学数学科学学院的计算数学方向博士毕业生，导师是陈发来教授。他的主要研究方向是计算几何方向，侧重于区域参数化领域和深度学习技术。"]
                     ]
                 }
             ]
@@ -134,7 +134,7 @@
                     "data":[
                         ["2016 - 2020","Bachelor of Science, Computational Mathematics", "USTC"],
                         ["2016 - 2020","Dual Degree: Computer Science", "USTC"],
-                        ["2020 - Present","PhD, Computational Mathematics", "USTC"]
+                        ["2020 - 2025","PhD, Computational Mathematics", "USTC"]
                     ]
                 }
             ]
@@ -148,7 +148,7 @@
                     "data":[
                         ["2016 - 2020","本科，信息与计算科学", "中国科学技术大学"],
                         ["2016 - 2020","双学位：计算机科学", "中国科学技术大学"],
-                        ["2020 - 至今","博士，计算数学", "中国科学技术大学"]
+                        ["2020 - 2025","博士，计算数学", "中国科学技术大学"]
                     ]
                 }
             ]
