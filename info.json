@@ -48,10 +48,10 @@
                     "type":"head",
                     "data":{
                         "name":"Zheng Zhan",
-                        "title":"Ph.D Candidate",
-                        "email":"zz00822@mail.ustc.edu.cn",
+                        "title":"Post-Doc",
+                        "email":"zhengzhan@cuhk.edu.hk, zz00822@mail.ustc.edu.cn",
                         "phone":"+86 15155113562",
-                        "addr":["Graphics & Geometric Computing Laboratory (GCL)<br>School of Mathematical Sciences, USTC"],
+                        "addr":["Department of Mathematics, The Chinese University of Hong Kong, Shatin, Hong Kong"],
                         "photo":"./img/id_photo_compress.jpg"
                     }
                 }
@@ -64,10 +64,10 @@
                     "type":"head",
                     "data":{
                         "name":"詹正",
-                        "title":"博士生",
-                        "email":"zz00822@mail.ustc.edu.cn",
+                        "title":"博士后",
+                        "email":"zhengzhan@cuhk.edu.hk, zz00822@mail.ustc.edu.cn",
                         "phone":"+86 15155113562",
-                        "addr":"安徽省图形计算与感知交互重点实验室<br>中国科学技术大学数学科学学院",
+                        "addr":"数学系<br>香港中文大学",
                         "photo":"./img/id_photo_compress.jpg"
                     }
                 }
@@ -80,7 +80,7 @@
                 {
                     "type":"table",
                     "data":[
-                        ["Zheng Zhan is a recent Ph.D. graduate from the School of Mathematical Science at the University of Science and Technology of China (USTC), supervised by Prof. Falai Chen. His research interests primarily focus on computational geometry, with a specific emphasis on domain parameterizations, iso-geometric analysis and deep learning technics."]
+                        ["Zhan Zheng is a new postdoctoral fellow in the research group of professor Ronald Lok Ming Lui at the Math department of The Chinese University of Hong Kong (CUHK). He previously got his PhD in Computational Mathematics from the School of Mathematical Science at the University of Science and Technology of China (USTC), under the supervision of professor Falai Chen. His research interests primarily focus on computational geometry, with a specific emphasis on domain parameterizations, iso-geometric analysis and deep learning technics."]
                     ]
                 }
             ]
@@ -92,7 +92,7 @@
                 {
                     "type":"table",
                     "data":[
-                        ["詹正是来自中国科学技术大学数学科学学院的计算数学方向博士毕业生，导师是陈发来教授。他的主要研究方向是计算几何方向，侧重于区域参数化领域和深度学习技术。"]
+                        ["詹正现为香港中文大学数学系雷乐铭教授研究组的新任博士后。他此前毕业于中国科学技术大学数学科学学院，获计算数学专业博士学位，师从陈发来教授。其主要研究方向为计算几何，重点关注区域参数化领域及深度学习技术的应用。"]
                     ]
                 }
             ]
@@ -337,3 +337,4 @@
         }
     }
 }
+
