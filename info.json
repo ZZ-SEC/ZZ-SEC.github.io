@@ -51,7 +51,7 @@
                         "title":"Postdoc",
                         "email":"zhengzhan@cuhk.edu.hk, zz00822@mail.ustc.edu.cn",
                         "phone":"+86 15155113562",
-                        "addr":["Department of Mathematics, The Chinese University of Hong Kong, Shatin, Hong Kong"],
+                        "addr":["Department of Mathematics, The Chinese University of Hong Kong"],
                         "photo":"./img/id_photo_compress.jpg"
                     }
                 }
@@ -361,5 +361,6 @@
         }
     }
 }
+
 
 
