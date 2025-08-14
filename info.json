@@ -13,7 +13,7 @@
             "name_en":"Basic Information",
             "align":"left",
             "vspace":30,
-            "section":["info","intro","education","research_interest"]
+            "section":["info","intro","education","working","research_interest"]
         },
         {
             "name_ch":"教学",
@@ -48,7 +48,7 @@
                     "type":"head",
                     "data":{
                         "name":"Zheng Zhan",
-                        "title":"Post-Doc",
+                        "title":"Postdoc",
                         "email":"zhengzhan@cuhk.edu.hk, zz00822@mail.ustc.edu.cn",
                         "phone":"+86 15155113562",
                         "addr":["Department of Mathematics, The Chinese University of Hong Kong, Shatin, Hong Kong"],
@@ -67,7 +67,7 @@
                         "title":"博士后",
                         "email":"zhengzhan@cuhk.edu.hk, zz00822@mail.ustc.edu.cn",
                         "phone":"+86 15155113562",
-                        "addr":"数学系<br>香港中文大学",
+                        "addr":"香港中文大学 数学系",
                         "photo":"./img/id_photo_compress.jpg"
                     }
                 }
@@ -149,6 +149,30 @@
                         ["2016 - 2020","本科，信息与计算科学", "中国科学技术大学"],
                         ["2016 - 2020","双学位：计算机科学", "中国科学技术大学"],
                         ["2020 - 2025","博士，计算数学", "中国科学技术大学"]
+                    ]
+                }
+            ]
+        },
+        "working_en":{
+            "type":"general",
+            "title":"Professional Experience",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["2025 - present","Postdoc", "Department of Mathematics, CUHK"]
+                    ]
+                }
+            ]
+        },
+        "working_ch":{
+            "type":"general",
+            "title":"工作经历",
+            "content":[
+                {
+                    "type":"table",
+                    "data":[
+                        ["2025 - 至今","博士后", "香港中文大学数学系"]
                     ]
                 }
             ]
@@ -337,4 +361,5 @@
         }
     }
 }
+
 
