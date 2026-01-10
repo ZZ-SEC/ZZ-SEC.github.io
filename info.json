@@ -219,6 +219,7 @@
                         ["Fall, 2020","001512: Single Variable Calculus", "Teaching Assistant", "USTC"],
                         ["Fall, 2021","CS1001B: C Language Programming", "Teaching Assistant", "USTC"],
                         ["Fall, 2022","CS1001A: C Language Programming", "Teaching Assistant", "USTC"]
+                        ["Fall, 2025","MATH1030C: Linear Algebra", "Lecturer", "CUHK"]
                     ]
                 }
             ]
@@ -233,6 +234,7 @@
                         ["秋季, 2020","001512: 单变量微积分", "助教", "中国科学技术大学"],
                         ["秋季, 2021","CS1001B: C 语言程序设计", "助教", "中国科学技术大学"],
                         ["秋季, 2022","CS1001A: C 语言程序设计", "助教", "中国科学技术大学"]
+                        ["秋季, 2025","MATH1030C: 线性代数", "讲师", "香港中文大学"]
                     ]
                 }
             ]
@@ -361,6 +363,7 @@
         }
     }
 }
+
 
 
 
