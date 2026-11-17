@@ -188,7 +188,8 @@
                         ["2023","Yang Yuanqing Education Fund Scholarship","USTC"],
                         ["2023","Outstanding Communist Youth League Cadre, Outstanding Student Cadre","USTC"],
                         ["2024","National Scholarship","USTC"],
-                        ["2025","Outstanding Graduates from USTC & Anhui Province","USTC"]
+                        ["2025","Outstanding Graduates from USTC & Anhui Province","USTC"],
+                        ["2026","Outstanding Doctoral Dissertation of the Chinese Academy of Sciences","Chinese Academy of Sciences"]
                     ]
                 }
             ]
@@ -204,7 +205,8 @@
                         ["2023","杨元庆教育基金奖学金","中国科学技术大学"],
                         ["2023","优秀共青团干部、优秀学生干部","中国科学技术大学"],
                         ["2024","国家奖学金","中国科学技术大学"],
-                        ["2025","中国科学技术大学优秀毕业生、安徽省优秀毕业生","中国科学技术大学"]
+                        ["2025","中国科学技术大学优秀毕业生、安徽省优秀毕业生","中国科学技术大学"],
+                        ["2026","中国科学院优秀博士论文","中国科学院"]
                     ]
                 }
             ]
@@ -246,8 +248,7 @@
                 {
                     "type":"table",
                     "data":[
-                        ["<a href = 'http://81.71.41.70/yinzhang/'>Seal design</a>", "Tool for seal design. The data is from <a href='http://www.zdic.net'>ZDict</a>"],
-                        ["<a href = './gym_time/index.html'> USTC Gym schedual </a>", "The schedual of USTC Gym"]
+                        ["<a href = 'http://81.71.41.70/yinzhang/'>Seal design</a>", "Tool for seal design. The data is from <a href='http://www.zdic.net'>ZDict</a>"]
                     ]
                 }
             ]
@@ -259,8 +260,7 @@
                 {
                     "type":"table",
                     "data":[
-                        ["<a href = 'http://81.71.41.70/yinzhang/'>印章集字</a>", "印章集字工具，字形数据来源于 <a href='http://www.zdic.net' target='_blank'>汉典</a> 网站"],
-                        ["<a href = './gym_time/index.html'> USTC 健身房时间表 </a>", "中国科学技术大学东、西、中区健身房时间安排表"]
+                        ["<a href = 'http://81.71.41.70/yinzhang/'>印章集字</a>", "印章集字工具，字形数据来源于 <a href='http://www.zdic.net' target='_blank'>汉典</a> 网站"]
                     ]
                 }
             ]
